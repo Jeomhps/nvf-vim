@@ -1,4 +1,6 @@
-{...}: {
-  telescope.enable = true;
-  telescope.setupOpts.pickers.colorscheme.enable_preview = true;
+{
+  config.vim = {
+    telescope.enable = true;
+    telescope.setupOpts.pickers.colorscheme.enable_preview = true;
+  };
 }
