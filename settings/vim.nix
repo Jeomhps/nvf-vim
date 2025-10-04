@@ -11,6 +11,7 @@
       shiftwidth = 2;
       tabstop = 2;
       softtabstop = 2;
+      clipboard = "unnamedplus";
     };
     theme = {
       enable = true;
