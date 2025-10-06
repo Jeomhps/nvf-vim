@@ -21,7 +21,8 @@
           package = pkgs.nixd;
         };
       };
-      csharp.enable = true;
+      #csharp.enable = true;
+      csharp.enable = !(pkgs.stdenv.hostPlatform.isAarch64 && pkgs.stdenv.hostPlatform.isDarwin);
       yaml.enable = true;
       markdown.enable = true;
       bash.enable = true;
