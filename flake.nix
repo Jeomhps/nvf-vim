@@ -25,5 +25,19 @@
       # other users in case your repository is public.
       default = neovimConfigured.neovim;
     };
+    packages."aarch64-darwin" = let
+      neovimConfigured = inputs.nvf.lib.neovimConfiguration {
+        inherit (nixpkgs.legacyPackages."aarch64-darwin") pkgs;
+        modules = [
+          ./default.nix
+        ];
+      };
+    in {
+      # Set the default package to the wrapped instance of Neovim.
+      # This will allow running your Neovim configuration with
+      # `nix run` and in addition, sharing your configuration with
+      # other users in case your repository is public.
+      default = neovimConfigured.neovim;
+    };
   };
 }
