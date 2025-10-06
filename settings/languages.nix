@@ -22,7 +22,7 @@
         };
       };
       #csharp.enable = true;
-      csharp.enable = !(pkgs.stdenv.hostPlatform.isAarch64 && pkgs.stdenv.hostPlatform.isDarwin);
+      csharp.enable = pkgs.stdenv.hostPlatform.system != "aarch64-darwin";
       yaml.enable = true;
       markdown.enable = true;
       bash.enable = true;
