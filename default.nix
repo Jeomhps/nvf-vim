@@ -7,5 +7,6 @@
     ./settings/git.nix
     ./settings/telescope.nix
     ./settings/terminal.nix
+    ./settings/keymaps.nix
   ];
 }
