@@ -21,7 +21,7 @@
           package = pkgs.nixd;
         };
       };
-      #csharp.enable = true;
+      csharp.enable = true;
       yaml.enable = true;
       markdown.enable = true;
       bash.enable = true;
